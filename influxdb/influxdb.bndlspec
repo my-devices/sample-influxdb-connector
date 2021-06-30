@@ -1,0 +1,23 @@
+<bundlespec>
+	<manifest>
+		<name>macchina.io Remote Manager InfluxDB Integration</name>
+		<symbolicName>net.my-devices.influxdb</symbolicName>
+		<version>1.0.0</version>
+		<vendor>Applied Informatics</vendor>
+		<copyright>(c) 2021, Applied Informatics Software Engineering GmbH</copyright>
+		<activator>
+			<class>MyDevices::InfluxDB::BundleActivator</class>
+			<library>net.my-devices.influxdb</library>
+		</activator>
+		<lazyStart>false</lazyStart>
+		<runLevel>610</runLevel>
+		<dependency>
+			<symbolicName>net.my-devices.core</symbolicName>
+			<version>[2.7.0,3.0.0)</version>
+		</dependency>
+	</manifest>
+	<code>
+		bin/${osName}/${osArch}/*.so,
+		bin/${osName}/${osArch}/*.dylib,
+	</code>
+</bundlespec>
